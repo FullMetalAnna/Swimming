@@ -1,0 +1,883 @@
+/*
+COLOURS
+#242424  tamno siva
+#fabe0a  zuta
+#32d2fa  plava
+#f53f0c  crvena
+#81cc10  zelena
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.3;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #242424;
+    background: #eee;
+}
+
+/***** GRID *******/
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/*************
+              *************
+CUSTOM STYLES
+              *************
+*************/
+
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.logo {
+    float: left;
+    text-decoration: none;
+    background: white;
+    color: #242424;
+    padding: 15px 10px;
+    height: 150px;
+    width: 280px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.logo span {
+    color: #32d2fa;
+    padding-left: 80px;
+}
+
+.logo i {
+    color: #32d2fa;
+    font-size: 60px;
+    position: relative;
+    top: 30px;
+}
+
+nav {
+    overflow: auto;
+    padding: 80px;
+}
+
+nav ul li {
+    float: right;
+    display: inline-block;
+    color: aliceblue;
+    padding: 60px 0;
+    height: 130px;
+    width: 130px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.zuta {
+    background: #fabe0a;
+}
+
+.siva {
+    background: #242424;
+}
+
+.plava {
+    background: #32d2fa;
+}
+
+.zelena {
+    background: #81cc10;
+}
+
+.crvena {
+    background: #f53f0c;
+}
+
+.color-boxes .col-3 {
+    padding: 50px 20px;
+    margin: 15px;
+    position: relative;
+    color: wheat;
+    height: 330px;
+
+}
+
+.color-boxes h1 {
+    font-size: 1.7rem;
+}
+
+.color-boxes p {
+    font-size: 1rem;
+    padding-top: 20px;
+}
+
+.color-boxes span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2rem;
+}
+
+.color-boxes {
+    margin-top: -200px;
+}
+
+.color-boxes .col-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.druga-sekcija .row .col-6 {
+    padding: 30px;
+    margin: 15px;
+    background-color: #f2f2f2;
+    text-align: left;
+    line-height: 2;
+    color: black;
+}
+
+.druga-sekcija .row {
+    padding: 20px;
+
+}
+
+.druga-sekcija .row .jedan h1 {
+    padding: 10px;
+    margin: 5px;
+}
+
+.druga-sekcija .row .jedan p {
+    padding: 20px;
+    font-size: 1rem;
+
+}
+
+.druga-sekcija .row button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.druga-sekcija .slika {
+    background-image: url(img/welcome1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.treca-sekcija .row {
+    padding: 30px;
+}
+
+.treca-sekcija .row .dva {
+    padding: 30px;
+    margin: 15px;
+    background-color: #f2f2f2;
+    text-align: left;
+    line-height: 2;
+    color: black;
+}
+
+.treca-sekcija .row .dva h1 {
+    padding: 10px;
+    margin: 15px;
+}
+
+.treca-sekcija .row p {
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.treca-sekcija .row .dva button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.treca-sekcija .row .slika {
+    background-image: url(img/lessons.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cetvrta-sekcija {
+    background-image: url(img/top-rated.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.cetvrta-sekcija .yyy {
+    background: red;
+    color: wheat;
+    padding: 40px 90px 80px 80px;
+    margin: 35px;
+    position: relative;
+
+}
+
+.cetvrta-sekcija .yyy span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2rem;
+}
+
+
+.peta-sekcija .row .jedan {
+    background-color: yellowgreen;
+    padding-left: 50px;
+    padding-top: 10px;
+
+    margin: 15px;
+
+    text-align: left;
+    line-height: 2;
+    color: wheat;
+}
+
+.peta-sekcija .row .jedan h1 {
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.peta-sekcija .row .jedan ul li {
+    list-style-type: none;
+    color: wheat;
+    font-size: 1.2rem;
+    padding: 2px;
+}
+
+
+
+.peta-sekcija .row {
+    padding: 20px;
+    font-size: 1rem;
+
+}
+
+.peta-sekcija .slika {
+    background-image: url(img/events.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    margin: 15px;
+}
+
+.sesta-sekcija .row {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sesta-sekcija .row .col-3 img {
+    border-radius: 500px;
+    height: 150px;
+    padding: 10px;
+
+
+}
+
+.sesta-sekcija .row .col-3 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    box-shadow: 5px 5px 8px 5px #888888;
+    margin: 30px;
+    width: auto;
+    
+   
+
+}
+
+.sesta-sekcija .row .col-3 p {
+    padding: 10px;
+}
+.sesta-sekcija .row .col-3 h1 {
+    font-size: 1.5em;
+}
+
+
+
+
+.sedma-sekcija {
+    background-image: url(img/skill.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.sedma-sekcija .yyy {
+    background: yellow;
+    color: black;
+    padding: 40px 90px 80px 80px;
+    margin: 35px;
+    position: relative;
+
+}
+
+.sedma-sekcija .yyy span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2rem;
+    position: absolute;
+}
+
+
+.osma-sekcija {
+    margin: 15px;
+}
+.osma-sekcija .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.osma-sekcija .row .col-6 {
+    padding: 40px;
+
+
+}
+
+.osma-sekcija .row .jedan {
+    background-color: skyblue;
+    width: auto;
+    
+    
+}
+
+.osma-sekcija .row .jedan h1 {
+    font-size: 3.2rem;
+    padding-bottom: 30px;
+
+}
+
+.osma-sekcija .row .jedan ul li {
+    font-size: 1.2rem;
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+.osma-sekcija .row .jedan a i {
+    padding: 40px;
+    text-align: center;
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+footer .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+/*RESPONSIVE */
+@media(max-width:890px) {
+
+    .logo {
+        float: left;
+        text-decoration: none;
+        background: lightblue;
+        color: white;
+        padding: 10px 10px;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
+    .logo span {
+        color: white;
+        padding-left: 80px;
+    }
+
+    .logo i {
+        color: whitesmoke;
+        font-size: 60px;
+        position: relative;
+        top: 30px;
+    }
+
+
+
+
+    nav {
+        overflow: auto;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        float: right;
+        margin: 5px;
+        color: aliceblue;
+        padding: 30px 0;
+        height: 70px;
+        width: 100px;
+
+        text-align: center;
+        margin-left: 5px;
+    }
+
+    header nav ul li a {
+        color: white;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .color-boxes .col-3 {
+        padding: 70px 50px;
+        margin: 15px;
+        position: relative;
+        color: wheat;
+        width: 40%;
+       
+
+    }
+
+    .color-boxes .col-3 {
+      display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        height: 30vh;
+
+    }
+
+    .color-boxes .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .color-boxes h1 {
+        font-size:1.4rem;
+    }
+
+    .color-boxes p {
+        font-size: 0.9rem;
+        
+    }
+
+    .color-boxes span {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 1rem;
+    }
+
+    .color-boxes {
+        margin-top: -100px;
+    }
+
+    .druga-sekcija .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .treca-sekcija .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .druga-sekcija .row .col-6 {
+        padding: 10px;
+        margin: 15px;
+        background-color: #f2f2f2;
+        text-align: left;
+        line-height: 2;
+        color: black;
+        width: 100%;
+    }
+     .treca-sekcija .row .col-6 {
+        padding: 10px;
+        margin: 15px;
+        background-color: #f2f2f2;
+        text-align: left;
+        line-height: 2;
+        color: black;
+        width: 100%;
+    }
+
+    .druga-sekcija .row .slika {
+        height: 40vh;
+    }
+
+    .treca-sekcija .row .slika {
+        height: 40vh;
+        order: 1;
+    }
+
+    .druga-sekcija .row .jedan p {
+        padding: 20px;
+        font-size: 0.7rem;
+    }
+
+    .treca-sekcija .row {
+        padding: 30px;
+
+    }
+
+    .treca-sekcija .row .dva h1 {
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .treca-sekcija .row p {
+        padding: 20px;
+        font-size: 0.7rem;
+    }
+
+    .treca-sekcija .row .dva button {
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+
+    .treca-sekcija .row .dva {
+        padding: 10px;
+        margin: 15px;
+        background-color: #f2f2f2;
+        text-align: left;
+        line-height: 2;
+        color: black;
+    }
+
+
+    .cetvrta-sekcija {
+        background-image: url(img/top-rated.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+
+    }
+
+    .cetvrta-sekcija .yyy {
+        background: red;
+        color: wheat;
+        padding: 20px;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .cetvrta-sekcija .yyy span {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 1rem;
+    }
+    .peta-sekcija .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .peta-sekcija .row .jedan {
+        background-color: yellowgreen;
+        padding: 30px;
+        margin: 15px;
+        text-align: left;
+        line-height: 2;
+        color: wheat;
+        width: 100%;
+    }
+    .peta-sekcija .row .slika {
+        width: 100%;
+    }
+
+    .peta-sekcija .row .jedan h1 {
+        font-size: 1.5rem;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .peta-sekcija .row .jedan ul li {
+        list-style-type: none;
+        color: wheat;
+        font-size: 1rem;
+        padding: 2px;
+    }
+
+
+
+    .peta-sekcija .row {
+        padding: 20px;
+        font-size: 1rem;
+
+    }
+
+    .peta-sekcija .slika {
+        background-image: url(img/events.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        margin: 15px;
+    }
+
+
+    .sesta-sekcija .row {
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
+
+
+    }
+    .sesta-sekcija .row .col-3 {
+        width: 100%;
+        position: relative;
+    }
+
+    .sesta-sekcija .row .col-3 img {
+        border-radius: 500px;
+        height: 100px;
+        padding: 10px;
+        
+    }
+
+    .sesta-sekcija .row .col-3 {
+        padding: 10px;
+        box-shadow: 5px 5px 8px 5px #888888;
+        margin: 10px;
+
+
+    }
+
+    .sesta-sekcija .row .col-3 p {
+        padding: 10px;
+        font-size: 0.7em;
+    }
+
+    .sesta-sekcija .row .col-3 h1 {
+        font-size: 1em;
+        color: orangered;
+    }
+
+
+    .sedma-sekcija {
+        background-image: url(img/skill.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .sedma-sekcija .yyy {
+        background: yellow;
+        color: black;
+        padding: 20px;
+        margin: 15px;
+        position: relative;
+
+    }
+
+    .sedma-sekcija .yyy h1 {
+        font-size: 1em;
+    }
+
+    .sedma-sekcija .yyy p {
+        font: 0.9;
+    }
+
+    .sedma-sekcija .yyy span {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 0.7em;
+        position: absolute;
+    }
+
+
+    .osma-sekcija {
+        margin: 15px;
+    }
+
+    .osma-sekcija .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+
+    .osma-sekcija .row .jedan {
+        background-color: skyblue;
+
+        padding: 30px;
+    }
+
+    .osma-sekcija .row .jedan h1 {
+        font-size: 1.2rem;
+        padding-bottom: 30px;
+
+    }
+
+    .osma-sekcija .row .jedan ul li {
+        font-size: 1.2rem;
+        list-style-type: none;
+        padding: 5px;
+
+    }
+
+    .osma-sekcija .row .jedan a i {
+        padding: 20px;
+        text-align: center;
+
+    }
+    .osma-sekcija .row .col-6 iframe {
+        width: 300px;
+    }
+  
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+    footer .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+}
